@@ -13,9 +13,11 @@ from keras.models import load_model
 START = "2012-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 st.title("Crypto Prediction App")
-crypto = ("BTC-USD","ETH-USD","LTC-USD","BNB-USD","MATIC-USD","DOT-USD","XRP-USD","HEX-USD",
-          "STETH-USD","DOGE-USD","BUSD-USD","SHIB-USD","DAI-USD","ATOM-USD","AVAX-USD","LINK-USD",
-          "LEO-USD","TRX-USD")
+crypto = ("BTC-USD","ETH-USD","USDT-USD","BNB-USD","USDC-USD","XRP-USD",
+          "ADA-USD","STETH-USD","DOGE-USD","SOL-USD","MATIC-USD","WTRX-USD",
+          "DOT-USD","TRX-USD","LTC-USD","BUSD-USD","HEX-USD","SHIB-USD",
+          "AVAX-USD","DAI-USD","WBTC-USD","LINK-USD","LEO-USD","ATOM-USD"
+          ,"UNI7083-USD","BAT-USD")
 crypto_selection = st.selectbox("Select Crypto for Prediction", crypto)
 
 #Loading the data
